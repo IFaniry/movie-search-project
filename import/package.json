@@ -1,0 +1,10 @@
+{
+  "name": "import",
+  "version": "1.0.0",
+  "description": "Import movie categories into roaring-bitmap index on Cloudflare KV",
+  "type": "module",
+  "main": "index.js",
+  "dependencies": {
+    "roaring-wasm": "^1.0.1"
+  }
+}

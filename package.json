@@ -1,0 +1,8 @@
+{
+  "name": "movie-search-project-root",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "roaring-wasm": "^1.0.1"
+  }
+}
