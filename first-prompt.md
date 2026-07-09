@@ -1,0 +1,7 @@
+I want to use [roaring-wasm](https://github.com/SalvatorePreviti/roaring-wasm) build a text search client that uses [the Inverted Index technique](https://github.com/wizenheimer/blaze#inverted-index). This client will be deployed to Cloudflare Workers and the inverted index will be stored on Cloudflare KV. This client lives in a wrangler project called  "client" (at the root of this project), it aims to deploy the client to Cloudflare Workers in order to look up the inverted index on Cloudflare KV. You will do a "npm install roaring-wasm" and use this roaring-wasm inside this folder in order to store the inverted index.
+
+I need an import functionality to create my inverted index for a movie search use case, I would like to be able to search by movie category. Inside of a wrangler project called "movies-import" (at the root of this project), give me the code that goes from an array of 3 movie objects to the final stored inverted index into an example Cloudflare KV namespace. Take the maximum Value sizes on Cloudflare KV of 25 MiB into account : chunking mechanism involved.
+
+The client should take the Cloudflare KV namespace of the inverted index as a parameter and expose a query builder API (take inspiration from: https://github.com/wizenheimer/blaze#query-builder-api). Note that since the inverted index has been chunked : binary search may be involved in the client implementation.
+
+I will think about testing this client with some console.log later.
